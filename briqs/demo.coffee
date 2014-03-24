@@ -23,6 +23,6 @@ exports.factory = class
     state.off 'rf12.packet', packetListener
 
 packetListener = (packet, ainfo) ->
-  if packet.id is 1 and packet.group is 212
+  if packet.id is 1 and packet.group is 100
     value = packet.buffer[1]
     ss.api.publish.all 'ss-demo', value
