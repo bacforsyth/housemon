@@ -52,8 +52,11 @@ findKey = (collection, key) ->
       return v
 
 splitReading = (obj, handler) ->
+  #console.info 'splitReading ', obj
   [locName, other..., drvName] = obj.key.split '.'
 
+  #console.info 'models ', models
+  #console.info 'locName ', locName
   loc = findKey models.locations, locName
   unless loc
     loc = findKey models.locations, drvName
@@ -73,6 +76,8 @@ splitReading = (obj, handler) ->
         console.info 'ignored value', locName, drvName, param, value
 
 processReading = (obj, oldObj) ->
+  # debugging line added 2013-12-12
+  #console.info "processReading", obj
   if obj
     splitReading obj, updateStatus
 
