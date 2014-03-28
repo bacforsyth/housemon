@@ -34,4 +34,4 @@ module.exports =
     cb
       outsideTemp: outsideT
       insideTemp: insideT
-      battery: raw[8]
+      battery: raw[9]
