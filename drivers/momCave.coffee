@@ -18,11 +18,10 @@ module.exports =
       scale: 1
     battery:
       title: 'Battery Voltage'
-      unit: 'mV'
+      unit: 'V'
       min: 0
       max: 3.3
-      factor: 3.3/255
-      scale: -2
+      scale: 2
       
 
   feed: 'rf12.packet'
