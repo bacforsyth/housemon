@@ -20,10 +20,9 @@ module.exports =
       title: 'Battery Voltage'
       unit: 'mV'
       min: 0
-      max: 3300
-      #todo: this can't be right
-      factor: 330/255
-      scale: -1
+      max: 3.3
+      factor: 3.3/255
+      scale: -2
       
 
   feed: 'rf12.packet'
