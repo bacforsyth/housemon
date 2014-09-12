@@ -4,6 +4,7 @@ exports.rf12nodes =
   212:
     1: 'tempNode'
     2: 'momCave'
+    3: 'upstairsCloset'
 
 exports.rf12default =
     recvid: 1
@@ -13,3 +14,4 @@ exports.rf12default =
 exports.locations =
   'RF12:212:1': title: 'box'
   'RF12:212:2': title: 'momCave'
+  'RF12:212:3': title: 'upstairsCloset'
